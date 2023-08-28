@@ -2,8 +2,6 @@
 #include "datastruct.h"
 #include "declarations.h"
 
-
-
 void
 setup_tcp_communication(){
 

@@ -7,7 +7,7 @@ char data_buffer[1024];
 int monitored_fd_set[32];
 
 static void
-intitiaze_monitor_fd_set(){
+initiate_monitor_fd_set(){
 
     int i = 0;
     for(; i < MAX_CLIENT_SUPPORTED; i++)
@@ -84,7 +84,7 @@ setup_tcp_server_communication(){
                        client_addr;
 
     /* Just drain the array of monitored file descriptors (sockets)*/
-    intitiaze_monitor_fd_set();
+    initiate_monitor_fd_set();
 
     /*step 2: tcp master socket creation*/
     if ((master_sock_tcp_fd = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP )) == -1)
