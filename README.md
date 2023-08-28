@@ -2,7 +2,7 @@
 MultiTCPServerSuite: A robust TCP framework enabling efficient multiplexed server-client communications. Designed for high-concurrency scenarios, ensuring optimal data transfer with minimal latency. Ideal for applications demanding real-time interactions.
 
 
-```
+
 # 🔀 MultiTCPServerSuite
 
 🌐 A robust TCP framework enabling efficient multiplexed server-client communications. Ideal for high-concurrency scenarios and applications demanding real-time interactions.
@@ -30,6 +30,7 @@ MultiTCPServerSuite: A robust TCP framework enabling efficient multiplexed serve
 ---
 
 ## 📥 Installation
+
 ```
 git clone [<repository-url>](https://github.com/ANSANJAY/MultiTCPServerClient)
 cd MultiTCPServerSuite
@@ -39,6 +40,7 @@ make
 ---
 
 ## 🚀 Usage
+
 ```
 ./server
 ./client <server-ip>
