@@ -1,19 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <netdb.h>
-#include <memory.h>
-#include <errno.h>
-#include "common.h"
-#include <arpa/inet.h>
+#include "headers.h"
+#include "datastruct.h"
+#include "declarations.h"
 
-
-#define MAX_CLIENT_SUPPORTED    32
-#define SERVER_PORT     2000 /*Server process is running on this port no. Client has to send data to this port no*/
-
-test_struct_t test_struct;
-result_struct_t res_struct;
 char data_buffer[1024];
 
 int monitored_fd_set[32];
