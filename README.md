@@ -7,6 +7,30 @@ MultiTCPServerSuite: A robust TCP framework enabling efficient multiplexed serve
 
 🌐 A robust TCP framework enabling efficient multiplexed server-client communications. Ideal for high-concurrency scenarios and applications demanding real-time interactions.
 
+```sql
+                 Server (Using select)
+         +-------------------------+
+         |                         |
+         |       FD_SET            |  
+         |     +-------+           |     
+         |     | FD 1  |-----------+-----+-----------+
+         |     +-------+  select   |     |  Client 1  |
+         |                         |     +-----------+
+         |                         |
+         |     +-------+           |      
+         |     | FD 2  |-----------+-----+-----------+
+         |     +-------+           |     |  Client 2  |
+         |                         |     +-----------+
+         |                         |
+         |     +-------+           |     +-----------+
+         |     | FD N  |-----------+-----+  Client N  |
+         |     +-------+           |     +-----------+
+         |                         |
+         +-------------------------+
+
+
+```
+
 ---
 
 ## 📚 Table of Contents
@@ -310,4 +334,3 @@ This project is licensed under the MIT License. See `LICENSE` for more details.
 ---
 
 🙌 Thanks for checking out MultiTCPServerSuite!
-```
