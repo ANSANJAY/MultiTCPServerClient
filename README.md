@@ -32,7 +32,7 @@ MultiTCPServerSuite: A robust TCP framework enabling efficient multiplexed serve
 ## 📥 Installation
 
 ```
-git clone [<repository-url>](https://github.com/ANSANJAY/MultiTCPServerClient)
+git clone [repository-url](https://github.com/ANSANJAY/MultiTCPServerClient)
 cd MultiTCPServerSuite
 make
 ```
