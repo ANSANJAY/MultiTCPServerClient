@@ -120,9 +120,6 @@ setup_tcp_server_communication(){
         return;
     }
 
-
-
-
     /*Add master socket to Monitored set of FDs*/
     add_to_monitored_fd_set(master_sock_tcp_fd);
 
