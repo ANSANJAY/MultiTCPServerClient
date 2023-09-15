@@ -62,7 +62,7 @@ The project is composed of multiple C files and headers that contribute to the f
 
 #### How it works
 
-1. The server initiates by defining variables and data structures, including a socket file descriptor `sockfd` and a `clilen` variable that will hold the size of the client's address.
+1. The server initiates by defining variables and data structures, including a socket file descriptor `sockfd` and a `client` variable that will hold the size of the client's address.
 2. It initializes a socket using the `socket()` function call and binds it to a specific port and IP address using `bind()`.
 3. The server then starts listening for incoming connections with the `listen()` function.
 4. When a client connects, `accept()` is called, and a new file descriptor `connfd` is returned to handle this specific client.
